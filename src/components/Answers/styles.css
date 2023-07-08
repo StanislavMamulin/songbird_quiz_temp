@@ -1,0 +1,15 @@
+.answers {
+  backdrop-filter: blur(20px);
+  border-radius: 5px;
+  overflow: hidden;
+
+  border: 1px solid var(--primary-color);
+  box-sizing: border-box;
+
+  padding: 0;
+  margin: 0;
+  margin-right: 8px;
+
+  flex: 1;
+  height: 100%;
+}

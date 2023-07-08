@@ -1,0 +1,28 @@
+.main {
+  background: url('../../assets/images/background.png');
+  padding: 16px;
+
+  max-width: 1400px;
+  margin: 0 auto;
+  font-size: 16px;
+}
+
+.current-question {
+  backdrop-filter: blur(20px);
+  border-radius: 5px;
+  overflow: hidden;
+
+  margin-bottom: var(--default-bottom-margin);
+}
+
+.answers-wrapper {
+  display: flex;
+
+  margin-bottom: var(--default-bottom-margin);
+}
+
+@media screen and (min-width: 1300px) {
+  .main {
+    font-size: 32px;
+  }
+}

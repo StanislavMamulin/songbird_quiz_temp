@@ -1,0 +1,27 @@
+.button {
+  width: 100%;
+  background-color: var(--triada-second-color);
+  border: none;
+  color: white;
+  padding: 12px 0px;
+  text-align: center;
+  vertical-align: middle;
+  transition: 0.5s;
+}
+
+.button:hover {
+  background-color: var(--triada-second-color-hover);
+}
+
+.button:active {
+  background-color: var(--triada-second-color-active);
+}
+
+.button_disabled {
+  background-color: var(--not-answered-color);
+  cursor: not-allowed;
+}
+
+.button_disabled:hover {
+  background-color: var(--not-answered-color);
+}

@@ -1,0 +1,16 @@
+.question-categories__item {
+  list-style-type: none;
+
+  padding: 8px;
+  flex: auto;
+  text-align: center;
+}
+
+.question-categories__item__title {
+  color: #6a72bd;
+}
+
+.question-categories__item_active {
+  background-color: var(--selected-color);
+  border-radius: 5px;
+}

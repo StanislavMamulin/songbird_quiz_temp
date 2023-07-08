@@ -1,0 +1,29 @@
+.bird-info {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+
+  margin-left: 8px;
+  border: 1px solid var(--primary-color);
+  backdrop-filter: blur(20px);
+  border-radius: 5px;
+  overflow: hidden;
+
+  text-align: center;
+
+  height: 300px;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+.bird-info__description {
+  display: flex;
+  overflow: scroll;
+  text-align: justify;
+}
+
+@media screen and (min-width: 1300px) {
+  .bird-info {
+    height: 600px;
+  }
+}

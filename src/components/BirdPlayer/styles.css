@@ -1,0 +1,147 @@
+.bird-player {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  padding: 8px;
+  min-height: 200px;
+  max-height: 400px;
+}
+
+.bird-image {
+  margin-right: 16px;
+
+  flex: 2;
+  max-height: 250px;
+  border-radius: 5px;
+
+  object-fit: contain;
+}
+
+.player {
+  display: flex;
+  flex-direction: column;
+  flex: 5;
+  width: 100%;
+}
+
+.player__details {
+  padding-bottom: 8px;
+}
+
+.playpause {
+  width: 72px;
+  opacity: 0.8;
+  transition: opacity .2s;
+}
+
+.playpause:hover {
+  opacity: 1.0;
+}
+
+.player__play-and-sound {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.seek-slider {
+  padding-bottom: 16px;
+  width: 100%;
+}
+
+.slider {
+  background: var(--lightest-primary-color);
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  height: 5px;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  background: var(--darker-primary-color);
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.seek-slider__slider {
+  width: 100%;
+}
+
+.seek-slider__times {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.sound-slider {
+  display: flex;
+  align-items: center;
+}
+
+.sound-slider__volume {
+  height: 16px;
+}
+
+.sound-slider__volume_low {
+  padding-right: 8px;
+}
+
+.sound-slider__volume_high {
+  padding-left: 8px;
+}
+
+/* vertical orientation */
+
+.bird-player_vertical {
+  flex-direction: column;
+  padding-bottom: 0;
+}
+
+.bird-image_vertical {
+  margin: 0;
+
+  height: 40%;
+  border-radius: 5px; 
+}
+
+.playpause_vertical {
+  width: 32px;
+}
+
+.seek-slider_vertical {
+  padding-bottom: var(--margin-bottom-mini);
+}
+
+@media screen and (max-width: 768px) {
+  .bird-player {
+    flex-direction: column;
+    padding-bottom: 0;
+  }
+  
+  .bird-image {
+    margin: 0;
+    margin-bottom: var(--margin-bottom-mini);
+  
+    height: 40%;
+    border-radius: 5px; 
+  }
+  
+  .playpause {
+    width: 32px;
+  }
+  
+  .seek-slider {
+    padding-bottom: var(--margin-bottom-mini);
+  }
+
+  .bird-name {
+    text-align: center;
+  }
+}
